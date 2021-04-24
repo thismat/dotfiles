@@ -1,4 +1,4 @@
 GuiPopupmenu 0
-GuiFont! FantasqueSansMono NF:h14
+GuiFont! JetBrains Mono:h14
 
 set mouse=a
