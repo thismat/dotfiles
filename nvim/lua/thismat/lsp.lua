@@ -9,8 +9,3 @@ end
 
 require'lspconfig'.gopls.setup{on_attach=custom_attach}
 require'lspconfig'.tsserver.setup{on_attach=custom_attach}
-
-require'lspconfig'.omnisharp.setup{
-  cmd       = { "C:\\Users\\m\\AppData\\Local\\omnisharp-vim\\omnisharp-roslyn\\OmniSharp.exe", "--languageserver", "--hostPID", tostring(pid) };
-  on_attach = custom_attach
-}

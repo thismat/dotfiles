@@ -65,7 +65,7 @@ set smartindent
 set noswapfile
 set nobackup
 set nowritebackup
-set undodir=~/AppData/Local/nvim-data/undodir
+set undodir=$XDG_CONFIG_HOME/nvim-data/undodir
 set undofile
 
 " Standard Key Mappings
