@@ -1,0 +1,24 @@
+let mapleader = " "
+
+set so=10
+set incsearch
+set ideamarks
+set commentary
+set nerdtree
+set highlightedyank
+
+let g:highlightedyank_highlight_duration = "50"
+
+" ---- Reload ideavimrc ----
+map <Leader><CR> :so F:\Configs\ideavim\ideavimrc<CR>
+
+" ---- Ideavim specific bindings ----
+map gh    <Action>(ShowErrorDescription)
+"map gh    <Action>(ShowQuickDocumentation)
+map <C-.> <Action>(ShowIntentionActions)
+
+" ----- Window Management ------
+map <C-l> <C-w><C-l>
+map <C-h> <C-w><C-h>
+map <C-j> <C-w><C-j>
+map <C-k> <C-w><C-k>
