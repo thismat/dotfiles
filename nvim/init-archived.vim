@@ -1,9 +1,8 @@
 call plug#begin(stdpath('data') . '/plugged')
 
 " Treesitter
-"Plug 'nvim-treesitter/nvim-treesitter'
-"Plug 'nvim-treesitter/completion-treesitter'
-
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/completion-treesitter'
 
 " FZF / Finders
 Plug 'junegunn/fzf'
@@ -13,15 +12,25 @@ Plug 'junegunn/fzf.vim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
 
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/vim-vsnip'
+
+" Rust
+Plug 'simrat39/rust-tools.nvim'
+
 " C# / Omnisharp
 Plug 'omnisharp/omnisharp-vim'
 
 " Filesystem Browser
 Plug 'preservim/nerdtree'
-Plug 'jremmen/vim-ripgrep'
 
 " Visual Plugins
 Plug 'arcticicestudio/nord-vim'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
@@ -112,8 +121,9 @@ if !exists('g:loaded_color')
 
 endif
 
-colorscheme nord
-let g:lightline = { 'colorscheme': 'nord' }
+set background=light
+colorscheme tokyonight
+let g:lightline = { 'colorscheme': 'tokyonight' }
 
 if (has("termguicolors"))
   set termguicolors
