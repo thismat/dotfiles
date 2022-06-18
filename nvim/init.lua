@@ -1,1 +1,2 @@
 require('thismat')
+require('plugins')
