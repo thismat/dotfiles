@@ -1,5 +1,7 @@
 local submodules = {
-	'options'
+        'plugins',
+	'options',
+        'colors',
 }
 
 -- TODO: Is there a better way to do this?
