@@ -26,9 +26,7 @@ local options = {
 	swapfile      = false,                               -- We don't need a swap file
 	termguicolors = true,                                -- Enables 24-bit RGB color in the TUI
 	writebackup   = false,                               -- Do not make a backup before overwriting a file, losses are taken if they occur
-	undodir       = "$XDG_CONFIG_HOME/nvim-data/undodir" -- Where to store undo data
 }
-
 
 for k, v in pairs(options) do
 	vim.opt[k] = v

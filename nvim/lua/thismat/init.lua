@@ -2,7 +2,7 @@ local submodules = {
         'plugins',
 	'options',
         'colors',
-        'lsp.lua'
+        'lsp'
 }
 
 -- TODO: Is there a better way to do this?
