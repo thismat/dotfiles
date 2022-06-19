@@ -5,8 +5,8 @@ I run a pretty sparse configuration as it stands, I am currently working to stre
 it a bit more and solidify it a bit. Make it more reasonable and maintainable,
 taking advantage of Lua to keep modules and submodules small.
 
-- Entry point: _*init.lua*_
-- Primary module: _*thismat*_ 
+- Entry point: **init.lua**
+- Primary module: **thismat**
 
 # thismat module structure
 
@@ -16,9 +16,10 @@ taking advantage of Lua to keep modules and submodules small.
 | root  | plugins   | Plugin management |
 | root  | colors    | Colorscheme customization |
 | root  | lsp       | LSP configuration, this is responsible for loading thismat.lsp.* level sudmoules |
+| |
 | lsp   | capabilities | Used for configuring the capabilities of the LSP server |
 | lsp   | completion | Configure completion plugin(s) |
-| lsp   | lua | Setup Lua LSP |
+| lsp   | lua | Setup Lua LSP | thismat.lsp.capabilities |
 
 # Plugins Used
 
