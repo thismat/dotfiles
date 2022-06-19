@@ -1,3 +1,5 @@
+-- Current Plugin Manager: Packer
+
 return require('packer').startup(function()
   -- Packer
   use 'wbthomason/packer.nvim'
@@ -7,4 +9,7 @@ return require('packer').startup(function()
 
   -- Colorschemes
   use { 'folke/tokyonight.nvim' }
+
+  -- LSP Config
+  use { 'neovim/nvim-lspconfig' }
 end)
