@@ -12,14 +12,14 @@ taking advantage of Lua to keep modules and submodules small.
 
 | Level | Submodule | Purpose | References |
 | ----- | --------- | ------- | ---------- |
-| root  | options   | Setup all the vim options I prefer |
-| root  | plugins   | Plugin management |
-| root  | colors    | Colorscheme customization |
-| root  | lsp       | LSP configuration, this is responsible for loading thismat.lsp.* level sudmoules |
+| root  | **options**   | Setup all the vim options I prefer |
+| root  | **plugins**   | Plugin management |
+| root  | **colors**   | Colorscheme customization |
+| root  | **lsp**   | LSP configuration, this is responsible for loading thismat.lsp.* level sudmoules |
 | |
-| lsp   | capabilities | Used for configuring the capabilities of the LSP server |
-| lsp   | completion | Configure completion plugin(s) |
-| lsp   | lua | Setup Lua LSP | thismat.lsp.capabilities |
+| lsp   | **capabilities** | Used for configuring the capabilities of the LSP server |
+| lsp   | **completion** | Configure completion plugin(s) |
+| lsp   | **lua** | Setup Lua LSP | thismat.lsp.capabilities |
 
 # Plugins Used
 
