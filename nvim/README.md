@@ -39,7 +39,7 @@ new comes along that catches my eye.
 
 ## Unsure
 
-Unsure plugins are not plugins I feel strongly about keeping, they are being tested.
+These are plugins I'm not sure if I want to keep, and need to look into alternatives for.
 
 - cmp-vsnip
 - vim-vsnip
