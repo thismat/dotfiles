@@ -18,7 +18,7 @@ taking advantage of Lua to keep modules and submodules small.
 | root  | **lsp**   | LSP configuration, this is responsible for loading thismat.lsp.* level sudmoules |
 | |
 | lsp   | **capabilities** | Used for configuring the capabilities of the LSP server |
-| lsp   | **completion** | Configure completion plugin(s) |
+| lsp   | **completion** | Configure completion plugin(s) | lspkind |
 | lsp   | **lua** | Setup Lua LSP | thismat.lsp.capabilities |
 
 # Plugins Used
@@ -42,4 +42,5 @@ new comes along that catches my eye.
 Unsure plugins are not plugins I feel strongly about keeping, they are being tested.
 
 - cmp-vsnip
+- lspkind
 - vim-vsnip

@@ -6,6 +6,6 @@ local submodules = {
 }
 
 -- TODO: Is there a better way to do this?
-for i, submodule in pairs(submodules) do
+for _, submodule in pairs(submodules) do
 	require('thismat.' .. submodule)
 end
