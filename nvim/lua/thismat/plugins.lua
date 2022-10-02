@@ -2,6 +2,8 @@
 
 local WINDOWS = vim.fn.has('win64') or vim.fn.has('win32')
 
+local packer_bootstrap = require('thismat.bootstrap').ensure_packer();
+
 return require('packer').startup(function(use)
   -- Packer
   use 'wbthomason/packer.nvim'
@@ -28,4 +30,9 @@ return require('packer').startup(function(use)
   -- Snipping
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
+
+  if packer_bootstrap then
+          require('packer').sync()
+  end
+
 end)

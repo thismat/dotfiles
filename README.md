@@ -1,6 +1,8 @@
 # Powershell Scripts
 
-## Jumplist - jumplist.ps1
+## Windows (/windows)
+
+### Jumplist - jumplist.ps1
 This is a basic dictionary for Powershell which lets you customize jumping
 to different custom locations. It does not have any guard rails and will let you
 mess things up, but it works well for smoothly moving around.
@@ -20,4 +22,3 @@ X:\NewLocation\> gt conf
 
 F:\Configs\>
 ```
-
