@@ -5,6 +5,7 @@ local options = {
 	colorcolumn   = "80",                                -- Display a column color at a specific spot
 	cursorline    = true,                                -- Highlight the line the cursor is on
 	completeopt   = {                                    -- For completion behaviors
+                "menu",
 		"menuone",
 		"noselect",
 		"preview",
