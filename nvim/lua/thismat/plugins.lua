@@ -27,13 +27,4 @@ return require('packer').startup(function(use)
   -- Snipping
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
-
-  -- Platform specific plugins
-  if WINDOWS then
-        -- tabnine windows
- 	use {'tzachar/cmp-tabnine', after = "nvim-cmp", run='powershell ./install.ps1', requires = 'hrsh7th/nvim-cmp'}
-  else
-        -- tabnine linux
- 	use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
-  end
 end)

@@ -21,3 +21,11 @@ function gt {
 
         & cd $locations[$dest]
 }
+
+function et {
+        param (
+                [string]$dest
+        )
+
+        & explorer $locations[$dest]
+}

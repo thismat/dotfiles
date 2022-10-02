@@ -31,7 +31,6 @@ cmp.setup({
                 { name = 'nvim_lua' },
                 { name = 'nvim_lsp' },
                 { name = 'path' },
-                { name = 'cmp_tabnine' },
                 { name = 'vsnip' }, -- For vsnip users.
                 { name = 'buffer' },
         },
@@ -47,7 +46,6 @@ cmp.setup({
                                 nvim_lua = "[API]",
                                 path = "[PATH]",
                                 vsnip = "[SNIP]",
-                                cmp_tabnine = "[TN]",
                         }
                 }
         }
