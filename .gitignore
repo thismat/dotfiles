@@ -1,2 +1,5 @@
 nvim-data/**
 nvim/plugin
+
+# Windows Specific
+desktop.ini
