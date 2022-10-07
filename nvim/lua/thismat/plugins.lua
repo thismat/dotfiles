@@ -31,8 +31,16 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
 
+  -- devicons
+  use 'kyazdani42/nvim-web-devicons'
+
+  -- filebrowser
+  use 'kyazdani42/nvim-tree.lua'
+
   if packer_bootstrap then
           require('packer').sync()
   end
 
 end)
+
+
