@@ -3,7 +3,7 @@ These are a bit dated and required for work, not all of these preferences
 I actually agree with personally.
 
 # Neovim Config
-See: [Neovim Readme](./nvim/README.md) for more information.
+See: [nvim directory](./nvim/) for more information.
 
 # Powershell Scripts
 
