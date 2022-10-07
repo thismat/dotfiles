@@ -1,5 +1,6 @@
 require'lspconfig'.sumneko_lua.setup {
         capabilities = require('thismat.lsp.capabilities').capabilities,
+        on_attach = require('thismat.lsp.options').on_attach,
         settings = {
                 Lua = {
                         runtime = {
