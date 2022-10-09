@@ -21,32 +21,17 @@ taking advantage of Lua to keep modules and submodules small.
 | lsp   | **completion** | Configure completion plugin(s) | lspkind |
 | lsp   | **options**    | options for the LSP servers (on_attach, etc) | 
 
+# Helpers
+
+| Helper | Purpose |
+| ------ | ------- |
+| thismat.loader | Takes a list of submodules and their namespace(optional) and requires them in |
+| thismat.packer-setup | Gets the plugins list from thismat.plugins and initializes them |
+
 # Plugins Used
 
-## Preferred
+[Plugins List](./lua/thismat/plugins.lua)
 
-These are the plugins I prefer for sure and aren't likely to change unless something
-new comes along that catches my eye.
-
-- cmp-buffer
-- cmp-nvim-lsp
-- cmp-path
-- cmp-vsnip
-- nvim-cmp
-- nvim-lspconfig
-- nvim-tree
-- nvim-treesitter
-- nvim-web-devicons
-- packer.nvim
-- tokyonight colorscheme (day mode, 😎)
-- vim-vsnip
-- b0o/schemastore.nvim
-
-## Unsure
-
-These are plugins I'm not sure if I want to keep, and need to look into alternatives for.
-
-- lspkind
 
 ## Issues
 
