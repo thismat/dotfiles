@@ -59,17 +59,23 @@ local plugins = {
   {
     'kyazdani42/nvim-tree.lua',
     config = function()
-      require('nvim-tree').setup()
+      require("nvim-tree").setup {}
     end
   },
 
   -- JSON Schema Store
   {
-    'b0o/schemastore.nvim',
-    config = function ()
-      require('schemastore').setup()
-    end
+    'b0o/schemastore.nvim'
   },
+
+  -- Trouble LSP diagnostics
+  {
+    "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons",
+    config = function()
+      require("trouble").setup {}
+    end
+  }
 }
 
 return plugins
