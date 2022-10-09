@@ -40,6 +40,7 @@ new comes along that catches my eye.
 - packer.nvim
 - tokyonight colorscheme (day mode, 😎)
 - vim-vsnip
+- b0o/schemastore.nvim
 
 ## Unsure
 

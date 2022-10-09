@@ -1,46 +1,75 @@
--- Current Plugin Manager: Packer
+-- List of plugins and configuration
 
+-- If windows specific setup is needed
 local WINDOWS = vim.fn.has('win64') or vim.fn.has('win32')
 
-local packer_bootstrap = require('thismat.bootstrap').ensure_packer();
-
-return require('packer').startup(function(use)
+local plugins = {
   -- Packer
-  use 'wbthomason/packer.nvim'
+  {
+    'wbthomason/packer.nvim'
+  },
 
   -- Treesitter
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  {
+    'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'
+  },
 
   -- Colorschemes
-  use 'folke/tokyonight.nvim'
+  {
+    'folke/tokyonight.nvim'
+  },
 
-  -- LSP Config
-  use 'neovim/nvim-lspconfig'
+  -- LSP and Completion
+  {
+    'neovim/nvim-lspconfig'
+  },
+  {
+    'hrsh7th/cmp-nvim-lsp'
+  },
+  {
+    'hrsh7th/cmp-buffer'
+  },
+  {
+    'hrsh7th/cmp-path'
+  },
+  {
+    'hrsh7th/cmp-cmdline'
+  },
+  {
+    'hrsh7th/nvim-cmp'
+  },
+  {
+    'onsails/lspkind.nvim'
+  },
 
-  -- LSP Completion
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-path'
-  use 'hrsh7th/cmp-cmdline'
-  use 'hrsh7th/nvim-cmp'
+  -- Snippets
+  {
+    'hrsh7th/cmp-vsnip'
+  },
+  {
+    'hrsh7th/vim-vsnip'
+  },
 
-  -- Better annotations for the LSP window
-  use 'onsails/lspkind.nvim'
+  -- Icons
+  {
+    'kyazdani42/nvim-web-devicons'
+  },
 
-  -- Snipping
-  use 'hrsh7th/cmp-vsnip'
-  use 'hrsh7th/vim-vsnip'
+  -- File browser
+  {
+    'kyazdani42/nvim-tree.lua',
+    config = function()
+      require('nvim-tree').setup()
+    end
+  },
 
-  -- devicons
-  use 'kyazdani42/nvim-web-devicons'
+  -- JSON Schema Store
+  {
+    'b0o/schemastore.nvim',
+    config = function ()
+      require('schemastore').setup()
+    end
+  },
+}
 
-  -- filebrowser
-  use 'kyazdani42/nvim-tree.lua'
-
-  if packer_bootstrap then
-          require('packer').sync()
-  end
-
-end)
-
-
+return plugins

@@ -1,11 +1,9 @@
-local submodules = {
-        'plugins',
-	'options',
-        'colors',
-        'lsp'
+local basics = {
+  'keymaps',
+  'packer-setup',
+  'options',
+  'colors',
+  'lsp'
 }
 
--- TODO: Is there a better way to do this?
-for _, submodule in pairs(submodules) do
-	require('thismat.' .. submodule)
-end
+require('thismat.loader').load(basics)
