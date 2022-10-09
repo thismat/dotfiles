@@ -13,7 +13,7 @@ taking advantage of Lua to keep modules and submodules small.
 | Level | Submodule | Purpose | References |
 | ----- | --------- | ------- | ---------- |
 | root  | **options**   | Setup all the vim options I prefer |
-| root  | **plugins**   | Plugin management |
+| root  | **plugins**   | Plugin list and configs |
 | root  | **colors**   | Colorscheme customization |
 | root  | **lsp**   | LSP configuration, this is responsible for loading thismat.lsp.* level sudmoules |
 | |
