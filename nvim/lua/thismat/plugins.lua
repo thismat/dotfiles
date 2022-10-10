@@ -103,6 +103,14 @@ local plugins = {
     config = function()
       require("lua-dev").setup {}
     end
+  },
+
+  -- Status line
+  {
+    "nvim-lualine/lualine.nvim",
+    config = function()
+      require("lualine").setup {}
+    end
   }
 }
 
