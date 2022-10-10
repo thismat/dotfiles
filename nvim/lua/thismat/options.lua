@@ -3,6 +3,7 @@ local options = {
   autoindent    = true,                                -- Keep autoindent on
   background    = "light",                             -- Evil isn't it?
   colorcolumn   = "80",                                -- Display a column color at a specific spot
+  cmdheight     = 0,
   cursorline    = true,                                -- Highlight the line the cursor is on
   completeopt   = {                                    -- For completion behaviors
     "menu",
