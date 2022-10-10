@@ -1,20 +1,20 @@
-require'lspconfig'.sumneko_lua.setup {
-        capabilities = require('thismat.lsp.capabilities').capabilities,
-        on_attach = require('thismat.lsp.options').on_attach,
-        settings = {
-                Lua = {
-                        runtime = {
-                                version = 'LuaJIT'
-                        },
-                        diagnostics = {
-                                globals = {'vim'}
-                        },
-                        workspace = {
-                                library = vim.api.nvim_get_runtime_file("", true),
-                        },
-                        telemetry = {
-                                enable = false,
-                        },
-                },
-        },
+require 'lspconfig'.sumneko_lua.setup {
+  capabilities = require('thismat.lsp.capabilities').capabilities,
+  on_attach = require('thismat.lsp.options').on_attach,
+  settings = {
+    Lua = {
+      runtime = {
+        version = 'LuaJIT'
+      },
+      diagnostics = {
+        globals = { 'vim' }
+      },
+      workspace = {
+        library = vim.api.nvim_get_runtime_file("", true),
+      },
+      telemetry = {
+        enable = false,
+      },
+    },
+  },
 }
