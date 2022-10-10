@@ -60,6 +60,7 @@ local plugins = {
     'kyazdani42/nvim-tree.lua',
     config = function()
       require("nvim-tree").setup {}
+      vim.api.nvim_set_keymap("n", "<A-1>", ":NvimTreeToggle<CR>", {})
     end
   },
 
@@ -73,7 +74,10 @@ local plugins = {
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons",
     config = function()
-      require("trouble").setup {}
+      require("trouble").setup {
+        use_diagnostic_signs = true
+      }
+      vim.api.nvim_set_keymap("n", "<A-4>", ":TroubleToggle<CR>", {})
     end
   }
 }
