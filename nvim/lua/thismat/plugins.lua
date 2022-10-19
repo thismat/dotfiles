@@ -77,16 +77,19 @@ local plugins = {
       require("trouble").setup {
         use_diagnostic_signs = true
       }
-      vim.api.nvim_set_keymap("n", "<A-4>", ":TroubleToggle<CR>", {})
+      require("thismat.keymaps").diagnotics_toggle(":TroubleToggle<CR>")
     end
   },
 
   -- Bufferline
   {
     "akinsho/bufferline.nvim",
+    tag = "v3.*",
     config = function()
       require("bufferline").setup {
         options = {
+          show_buffer_close_icons = false,
+          show_close_icon = false,
           diagnostics = "nvim_lsp",
           diagnostics_indicator = function(count, level, diagnostics_dict, context)
             local icon = level:match("error") and " " or " "
@@ -99,9 +102,9 @@ local plugins = {
 
   -- LUA Dev (Neovim Specific)
   {
-    "folke/lua-dev.nvim",
+    "folke/neodev.nvim",
     config = function()
-      require("lua-dev").setup {}
+      require("neodev").setup {}
     end
   },
 

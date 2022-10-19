@@ -1,4 +1,4 @@
 GuiPopupmenu 0
-GuiFont! JetBrainsMonoNL Nerd Font Mono:h14
+GuiFont! JetBrainsMono Nerd Font:h14
 
 set mouse=a

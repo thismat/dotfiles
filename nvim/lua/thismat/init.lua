@@ -3,7 +3,8 @@ local basics = {
   'packer-setup',
   'options',
   'colors',
-  'lsp'
+  'lsp',
+  'ui'
 }
 
 require('thismat.loader').load(basics)
