@@ -114,7 +114,22 @@ local plugins = {
     config = function()
       require("lualine").setup {}
     end
+  },
+
+  -- Fuzzy Finder
+  {
+    'nvim-telescope/telescope.nvim',
+    config = function()
+      local builtin = require("telescope.builtin")
+      vim.keymap.set("n", "<C-p>", builtin.find_files, {})
+    end
+  },
+
+  -- Plenary
+  {
+    'nvim-lua/plenary.nvim'
   }
+
 }
 
 return plugins

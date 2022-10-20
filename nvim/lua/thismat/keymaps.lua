@@ -26,8 +26,8 @@ end
 ---Setup insert mode bindings
 function M.insert_mode()
   -- Insert Mode Specific
-  vim.keymap.set("i", "<C-BS>", "<C-w>", opts);
-  vim.keymap.set("i", "<C-h>", "<C-w>", opts);
+  vim.keymap.set("i", "<C-BS>", "<C-w>", opts)
+  vim.keymap.set("i", "<C-h>", "<C-w>", opts)
 end
 
 M.buffer_setup()
