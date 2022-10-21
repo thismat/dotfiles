@@ -1,16 +1,9 @@
-vim.cmd[[colorscheme tokyonight]]
+local tk = require("thismat.tokyo-custom-config");
 
-local colorOptions = {
-        italic_coments = true,
-        italic_keywords = true,
-        italic_functions = true,
-        tokyonight_italic_variables = true,
-        dark_float = true
-}
+require("tokyonight").setup({
+  style = "day",
+  on_highlights = tk.handle_highlight
+})
 
-vim.g.tokyonight_sidebars = { "packer", "terminal", "qf" }
-
-for key, opt in pairs(colorOptions) do
-        vim.g["tokyonight_" .. key] = opt
-end
+vim.cmd [[colorscheme tokyonight]]
 
