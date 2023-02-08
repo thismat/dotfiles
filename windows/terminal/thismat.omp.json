@@ -1,0 +1,103 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "transient_prompt": {
+    "foreground": "p:brightBlack",
+    "template":"\uead2 "
+  },
+  "palette": {
+    "background": "#FAFBFC",
+    "black": "#565869",
+    "blue": "#09A1ED",
+    "brightBlack": "#75798F",
+    "brightBlue": "#14B1FF",
+    "brightCyan": "#13BBB7",
+    "brightGreen": "#16C60C",
+    "brightPurple": "#FF94D2",
+    "brightRed": "#FFAEAC",
+    "brightWhite": "#A7ADCC",
+    "brightYellow": "#F5B900",
+    "cursorColor": "#F5B900",
+    "cyan": "#13BBB7",
+    "foreground": "#565869",
+    "green": "#13A10E",
+    "purple": "#F767BB",
+    "red": "#FF5C57",
+    "selectionBackground": "#2DAE58",
+    "white": "#565869",
+    "yellow": "#CF9C00"
+  },
+  "blocks": [
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "p:red",
+          "style": "plain",
+          "template": "\uf00d ",
+          "type": "exit"
+        },
+        {
+          "foreground": "p:brightYellow",
+          "style": "plain",
+          "template": "\uf07b  ",
+          "type": "root"
+        },
+        {
+          "foreground": "p:blue",
+          "properties": {
+            "style": "folder"
+          },
+          "style": "plain",
+          "template": "{{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "foreground": "p:brightGreen",
+          "properties": {
+            "fetch_status": true
+          },
+          "style": "plain",
+          "template": "<p:foreground>on</> <p:cyan>{{ .HEAD }}</>{{if .BranchStatus }} <p:brightWhite>{{ .BranchStatus }}</>{{ end }}{{ if .Working.Changed }} <p:red>\uf044</> {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} <p:green>\uf046</> {{ .Staging.String }}{{ end }} ",
+          "type": "git"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "newline": false,
+      "type": "prompt",
+      "segments": [
+        {
+          "style": "powerline",
+          "type": "dotnet",
+          "template": "\uE77F {{ .Full }}"
+        },
+        {
+          "foreground": "p:brightGreen",
+          "properties": {
+            "fetch_version": true
+          },
+          "style": "plain",
+          "template": "<#ffffff>via</> \ue781 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
+          "type": "node"
+        }
+      ]
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "p:brightCyan",
+          "style": "plain",
+          "template": "\u279c ",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "version": 2
+}
