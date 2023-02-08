@@ -15,9 +15,12 @@ function Test-Installed {
 $apps = "JanDeDobbeleer.OhMyPosh",
         "ajeetdsouza.zoxide"
 
+Write-Output "$apps"
 $progress = 0;
 foreach ($app in $apps) {
-    if (Test-Installed $app) {
+    $installed = Test-Installed $app
+    if ($installed -eq $false) {
+        Write-Output "Installing: $app"
         & winget install $app -e --source winget
     }
 
