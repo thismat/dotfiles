@@ -1,0 +1,54 @@
+let mapleader = " "
+
+set so=10
+set relativenumber
+set incsearch
+set hlsearch
+set ideamarks
+set commentary
+set vim-paragraph-motion
+set highlightedyank
+
+let g:highlightedyank_highlight_duration = "50"
+
+" ---- Plugins ----
+Plug 'tpope/vim-surround'
+
+" ---- Reload ideavimrc ----
+map <Leader><CR> :so ~/.ideavimrc<CR>
+noremap <C-n> :nohls<CR>
+
+imap <C-j> <Esc>
+
+" ---- Clipboard Management ----
+
+" " Copy to clipboard
+vnoremap <C-c> "+y
+vnoremap  gy  "+y
+
+nnoremap <C-c> "+yy
+nnoremap  gY  "+yg_
+nnoremap  gy  "+y
+nnoremap  gyy  "+yy
+
+" " Paste from clipboard
+nnoremap <C-v> "+p
+nnoremap cp "+p
+nnoremap cP "+P
+
+vnoremap cp "+p
+vnoremap cP "+P
+vnoremap <C-v> "+p
+
+inoremap <C-v> <c-r>"
+
+" ---- Ideavim specific bindings ----
+map gh    <Action>(ShowErrorDescription)
+map gi    <Action>(QuickJavaDoc)
+map <C-.> <Action>(ShowIntentionActions)
+
+" ----- Window Management ------
+map <C-l> <C-w><C-l>
+map <C-h> <C-w><C-h>
+map <C-j> <C-w><C-j>
+map <C-k> <C-w><C-k>
