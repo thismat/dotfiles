@@ -1,6 +1,8 @@
 matches:
-  - trigger: "'gadd"
+  - trigger: "'ga"
     replace: "git add ."
+  - trigger: "'gcm"
+    replace: "git commit -m "
   - trigger: "'gco"
     replace: "git checkout "
   - trigger: "'gpull"
@@ -9,4 +11,6 @@ matches:
     replace: "git push origin "
   - trigger: "'gf"
     replace: "git fetch -p"
+  - trigger: "'gst"
+    replace: "git status"
 
