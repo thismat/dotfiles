@@ -1,0 +1,41 @@
+matches:
+  - trigger: "'r"
+    replace: "→"
+    word: true
+    propagate_case: true
+  - trigger: "'l"
+    replace: "←"
+    word: true
+    propagate_case: true
+  - trigger: "'u"
+    replace: "↑"
+    word: true
+    propagate_case: true
+  - trigger: "'d"
+    replace: "↓"
+    word: true
+    propagate_case: true
+  - trigger: "'ur"
+    replace: "↗︎"
+    word: true
+    propagate_case: true
+  - trigger: "'ul"
+    replace: "↖"
+    word: true
+    propagate_case: true
+  - trigger: "'dr"
+    replace: "↘"
+    word: true
+    propagate_case: true
+  - trigger: "'dl"
+    replace: "↙"
+    word: true
+    propagate_case: true
+  - trigger: "'lte"
+    replace: "≤"
+    word: true
+    propagate_case: true
+  - trigger: "'gte"
+    replace: "≥"
+    word: true
+

@@ -1,0 +1,12 @@
+matches:
+  - trigger: "'gadd"
+    replace: "git add ."
+  - trigger: "'gco"
+    replace: "git checkout "
+  - trigger: "'gpull"
+    replace: "git pull origin "
+  - trigger: "'gpush"
+    replace: "git push origin "
+  - trigger: "'gf"
+    replace: "git fetch -p"
+
