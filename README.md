@@ -1,3 +1,7 @@
+# TODO
+
+- :running: Update the rider configs
+
 # JetBrains Coding Styles
 These are a bit dated and required for work, not all of these preferences 
 I actually agree with personally.
