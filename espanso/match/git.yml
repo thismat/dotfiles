@@ -13,4 +13,6 @@ matches:
     replace: "git fetch -p"
   - trigger: "'gst"
     replace: "git status"
+  - trigger: "'gcb"
+    replace: "git checkout -b "
 
