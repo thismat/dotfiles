@@ -1,6 +1,8 @@
 # TODO
 
-- Not sure
+- Need to clean up Jump List
+- Add oh my posh setups and get things cleaned up
+- Remove JetBrains configs
 
 # JetBrains Coding Styles
 These are a bit dated and required for work, not all of these preferences 
