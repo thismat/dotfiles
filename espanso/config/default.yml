@@ -45,4 +45,4 @@ undo_backspace: false
 word_separators: [" ", ")", "\r"]
 
 # ALT+Space is already used by windows powertoys
-search_shortcut: CTRL+SPACE
+search_shortcut: CTRL+ALT+SHIFT+SPACE
