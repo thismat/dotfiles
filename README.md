@@ -5,6 +5,10 @@
 - Remove JetBrains configs
 - Consider some changes to espanso
 
+## Plan for Better Setup
+
+- Need to decide and test provisioning a system
+
 # JetBrains Coding Styles
 These are a bit dated and required for work, not all of these preferences 
 I actually agree with personally.
