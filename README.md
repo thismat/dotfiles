@@ -10,6 +10,9 @@
 - Need to decide and test provisioning a system
 
 # JetBrains Coding Styles
+- TODO: Remove these as they are syncing
+- TODO: Investigate if I can create a github actions job to sync my settings here
+
 These are a bit dated and required for work, not all of these preferences 
 I actually agree with personally.
 
