@@ -4,8 +4,8 @@
 - Add oh my posh setups and get things cleaned up
 - Remove JetBrains configs
 - Consider some changes to espanso
-- start adding macos changes
-
+- Need MacOS Folder
+- Need Homebrew install script for MacOS
 
 ## Plan for Better Setup
 
