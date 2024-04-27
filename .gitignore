@@ -1,4 +1,5 @@
 jgit
+zed/.*
 nvim-data/**
 nvim/plugin
 

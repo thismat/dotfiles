@@ -3,6 +3,7 @@ import = [
 ]
 
 [window]
+option_as_alt = "Both"
 
 [font]
 normal = { family = "JetBrainsMono Nerd Font Mono", style = "Medium" }
