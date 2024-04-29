@@ -3,8 +3,17 @@
 - Need to clean up Jump List
 - Add oh my posh setups and get things cleaned up
 - Remove JetBrains configs
+- Consider some changes to espanso
+- Need Homebrew install script for MacOS
+
+## Plan for Better Setup
+
+- Need to decide and test provisioning a system
 
 # JetBrains Coding Styles
+- TODO: Remove these as they are syncing
+- TODO: Investigate if I can create a github actions job to sync my settings here
+
 These are a bit dated and required for work, not all of these preferences 
 I actually agree with personally.
 
@@ -13,25 +22,10 @@ See: [nvim directory](./nvim/) for more information.
 
 # Powershell Scripts
 
+# Helper Apps
+
+- Zoxide
+- Espanso
+
 ## Windows (/windows)
 
-### Jumplist - jumplist.ps1
-This is a basic dictionary for Powershell which lets you customize jumping
-to different custom locations. It does not have any guard rails and will let you
-mess things up, but it works well for smoothly moving around.
-
-Usage:
-```
-# Add conf as the current location, add newloc with a full path
-F:\Configs\> at conf .
-F:\Configs\> at newloc X:\NewLocation\
-
-# Jump to newloc
-F:\Configs\> gt newloc
-X:\NewLocation\>
-
-# Jump to conf
-X:\NewLocation\> gt conf
-
-F:\Configs\>
-```
