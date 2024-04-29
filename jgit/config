@@ -4,3 +4,6 @@
 [filesystem "JetBrains s.r.o.|17.0.9|-1026477333"]
 	timestampResolution = 1006 microseconds
 	minRacyThreshold = 0 nanoseconds
+[filesystem "JetBrains s.r.o.|17.0.10|-1026477333"]
+	timestampResolution = 1004 microseconds
+	minRacyThreshold = 0 nanoseconds
