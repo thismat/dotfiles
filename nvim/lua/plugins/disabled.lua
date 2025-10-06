@@ -1,4 +1,26 @@
 return {
-  { "folke/flash.nvim", enabled = false },
-  { "echasnovski/mini.pairs", enabled = false },
+  {
+    "folke/snacks.nvim",
+    --@type sncaks.Config
+    opts = {
+      animate = {
+        enabled = false,
+      },
+      scroll = {
+        enabled = false,
+      },
+      indent = {
+        enabled = false,
+        char = "/",
+        scope = {
+          enabled = false,
+          underline = true,
+          char = "-",
+        },
+        chunk = {
+          enabled = true,
+        },
+      },
+    },
+  },
 }
