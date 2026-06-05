@@ -1,12 +1,11 @@
 return {
   -- Colorscheme
-  { "nyoom-engineering/oxocarbon.nvim" },
-  { "yorickpeterse/nvim-grey" },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "grey",
+      colorscheme = "catppuccin-mocha",
     },
   },
 }
