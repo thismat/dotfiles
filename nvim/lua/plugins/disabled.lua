@@ -10,7 +10,10 @@ return {
         enabled = false,
       },
       indent = {
-        enabled = false,
+        animate = {
+          enabled = false,
+        },
+        enabled = true,
         char = "/",
         scope = {
           enabled = false,
